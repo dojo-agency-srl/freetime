@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import logo from "images/logo.png";
 import footerBg from "images/footer.png";
@@ -6,8 +7,45 @@ import footerBg from "images/footer.png";
 import "styles/custom.scss";
 
 import { footer } from "site-structure.js";
+import { routes } from "routes.js";
 
 const Footer = () => {
+	const [scrolled, setScrolled] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			if (window.scrollY > 0) {
+				setScrolled(true);
+			} else {
+				setScrolled(false);
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
+	const renderRoutes = () =>
+		routes.map((route) => {
+			// se è una route con figli
+			if (route.visible) {
+				return (
+					<>
+						<li key={route.key}>
+							<Link to={route.route} key={route.key + "-link"}>
+								{route.linkName}
+							</Link>
+						</li>
+					</>
+				);
+			}
+
+			return null;
+		});
+
 	return (
 		<footer className="footer">
 			<div className="container">
@@ -22,21 +60,7 @@ const Footer = () => {
 								</div>
 								<nav className="footer_nav">
 									<ul className="d-flex flex-sm-row flex-column align-items-sm-start align-items-center justify-content-center">
-										<li>
-											<a href="index.html">Home</a>
-										</li>
-										<li>
-											<a href="about.html">About us</a>
-										</li>
-										<li>
-											<a href="services.html">Classes & Services</a>
-										</li>
-										<li>
-											<a href="blog.html">Blog</a>
-										</li>
-										<li>
-											<a href="contact.html">Contact</a>
-										</li>
+										{renderRoutes()}
 									</ul>
 								</nav>
 								<div className="newsletter_container">

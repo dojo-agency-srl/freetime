@@ -24,6 +24,38 @@ const homePage = {
 	route: "/home",
 };
 
+const aboutPage = {
+	pageTitle: "About",
+	description: "About",
+	section: "About",
+	linkName: "About",
+	route: "/about",
+};
+
+const servicesPage = {
+	pageTitle: "Servizi",
+	description: "Servizi",
+	section: "Servizi",
+	linkName: "Servizi",
+	route: "/servizi",
+};
+
+const galleryPage = {
+	pageTitle: "Gallery",
+	description: "Gallery",
+	section: "Gallery",
+	linkName: "Gallery",
+	route: "/gallery",
+};
+
+const contactsPage = {
+	pageTitle: "Contatti",
+	description: "Contatti",
+	section: "Contatti",
+	linkName: "Contatti",
+	route: "/contatti",
+};
+
 const hero = {
 	image: heroImg,
 	overtitleIcon: faPlay,
@@ -135,4 +167,4 @@ const contacts = {
 	email: "",
 }
 
-export { homePage, hero, about, testimonials, services, footer, contacts };
+export { homePage, aboutPage, servicesPage, galleryPage, contactsPage, hero, about, testimonials, services, footer, contacts };
