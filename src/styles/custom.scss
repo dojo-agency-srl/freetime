@@ -1,0 +1,94 @@
+:root {
+  --base-color: #75C8B4;
+  --accent-color: #E7EA14;
+  --text-color: #242728;
+}
+
+/* RATING */
+.rating_1 i:first-child{color: #fba40e;}
+.rating_2 i:first-child{color: #fba40e;}
+.rating_2 i:nth-child(2){color: #fba40e;}
+.rating_3 i:first-child{color: #fba40e;}
+.rating_3 i:nth-child(2){color: #fba40e;}
+.rating_3 i:nth-child(3){color: #fba40e;}
+.rating_4 i:first-child{color: #fba40e;}
+.rating_4 i:nth-child(2){color: #fba40e;}
+.rating_4 i:nth-child(3){color: #fba40e;}
+.rating_4 i:nth-child(4){color: #fba40e;}
+.rating_5 i:first-child{color: #fba40e;}
+.rating_5 i:nth-child(2){color: #fba40e;}
+.rating_5 i:nth-child(3){color: #fba40e;}
+.rating_5 i:nth-child(4){color: #fba40e;}
+.rating_5 i:nth-child(5){color: #fba40e;}
+
+/* HEADER LOGO */
+.logo {
+    height: 100%;
+
+    img {
+        height: 60%;
+    }
+}
+
+/* FOOTER LOGO */
+.footer_logo  {
+    .logo {
+        img {
+            width: 160px;
+            height: auto;
+        }
+    } 
+}
+
+/* BOTTONI COLORE ACCENTO */
+.accent {
+    background: var(--accent-color);
+    color: var(--text-color);
+}
+.button.accent {
+    background: var(--accent-color);
+
+    & a {
+        color: var(--text-color);
+    }
+
+    & a::before {
+        background: rgba(255, 255, 255, .4);
+    } 
+}
+
+/* TESTO ACCENTO */
+.accent-text {
+    color: var(--accent-color);
+}
+
+/* PHONE */
+.phone.accent-color
+{
+	border: solid 1px var(--accent-color);
+	box-shadow: 0 0 1px 0 var(--accent-color) inset, 0 0 1px 0 var(--accent-color);
+}
+
+/* ICONE CORSI */
+.service_icon svg {
+    width: 100%;
+    height: 100%;
+    color: var(--base-color);
+}
+
+/* FOOTER */
+.footer_nav, .newsletter_container {
+    margin-top: 40px;
+}
+
+.footer_image {
+    opacity: .4;
+}
+
+.newsletter_input {
+    border: solid 1px var(--base-color);
+}
+
+.newsletter_button {
+    background: var(--base-color);
+}
