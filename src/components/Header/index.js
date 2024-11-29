@@ -7,8 +7,13 @@ import logo from "images/logo.png";
 import { contacts, homePage } from "site-structure.js";
 import { routes } from "routes.js";
 
+let location;
+
 const Header = () => {
 	const [scrolled, setScrolled] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
+
+	location = useLocation();
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -25,6 +30,10 @@ const Header = () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
 	}, []);
+
+	useEffect(() => {
+		setIsOpen(false);
+	}, [location]);
 
 	const renderRoutes = () =>
 		routes.map((route) => {
@@ -71,8 +80,8 @@ const Header = () => {
 				</div>
 			</header>
 
-			<div className="hamburger_bar trans_400 d-flex flex-row align-items-center justify-content-start">
-				<div className="hamburger">
+			<div className={scrolled ? "hamburger_bar trans_400 d-flex flex-row align-items-center justify-content-start scrolled" : "hamburger_bar trans_400 d-flex flex-row align-items-center justify-content-start"}  onClick={() => setIsOpen(!isOpen)}>
+				<div className={isOpen ? "hamburger active" : "hamburger"}>
 					<div className="menu_toggle d-flex flex-row align-items-center justify-content-start">
 						<span>menu</span>
 						<div className="hamburger_container">
@@ -90,7 +99,7 @@ const Header = () => {
 				</div>
 			</div>
 
-			<div className="menu trans_800">
+			<div className={isOpen ? "menu trans_800 active" : "menu trans_800"}>
 				<div className="menu_content d-flex flex-column align-items-center justify-content-center text-center">
 					<ul>
 						{renderRoutes()}

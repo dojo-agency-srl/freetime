@@ -1,6 +1,6 @@
 import Home from "pages/Home";
-import About from "pages/About";
-import Services from "pages/Services";
+import AboutPage from "pages/About";
+import ServicesPage from "pages/Services";
 import Gallery from "pages/Gallery";
 import Contacts from "pages/Contacts";
 
@@ -18,13 +18,13 @@ const routes = [
 	{
 		key: "about",
 		...aboutPage,
-		component: <About title={`${aboutPage.pageTitle} - ${appname}`} />,
+		component: <AboutPage title={`${aboutPage.pageTitle} - ${appname}`} />,
 		visible: true,
 	},
 	{
 		key: "services",
 		...servicesPage,
-		component: <Services title={`${servicesPage.pageTitle} - ${appname}`} />,
+		component: <ServicesPage title={`${servicesPage.pageTitle} - ${appname}`} />,
 		visible: true,
 	},
 	{
