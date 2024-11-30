@@ -2,6 +2,12 @@
     --base-color: #75c8b4;
     --accent-color: #e7ea14;
     --text-color: #242728;
+    --small-hero-height: 550px;
+}
+
+/* MENU */
+.main_nav ul li.active a {
+    font-weight: 600;
 }
 
 /* RATING */
@@ -114,6 +120,14 @@
     box-shadow:
         0 0 1px 0 var(--accent-color) inset,
         0 0 1px 0 var(--accent-color);
+
+    svg {
+        margin-right: 8px;
+    }
+
+    a {
+        color: var(--accent-color);
+    }
 }
 
 /* ICONE CORSI */
@@ -139,6 +153,8 @@
 
 .newsletter_button {
     background: var(--base-color);
+    width: 120px;
+    border-radius: 31px;
 }
 
 /* MENU */
@@ -149,6 +165,25 @@
 /* SERVICES */
 .services {
     padding-bottom: 80px;
+
+    &.small {
+        padding-top: 60px;
+        padding-bottom: 40px;
+
+        .services_row {
+            margin-top: 52px;
+        }
+
+        .container {
+            z-index: 2;
+        }
+
+        .overlay {
+            bottom: -200px;
+            left: -50px;
+            width: 140%;
+        }
+    }
 }
 
 .background_image.cover {
@@ -157,11 +192,11 @@
 
 /* ABOUT PAGE */
 .home.small {
-    height: 667px;
+    height: var(--small-hero-height);
 
     .home_title {
         font-size: 72px;
-        margin-top: 72px;
+        margin-top: 100px;
     }
 
     .home_subtitle {
@@ -251,10 +286,10 @@
 }
 .skill_bars {
     height: 4px;
+    width: 100%;
 
     svg {
         height: 4px;
-        width: 100%;
     }
 }
 .progress_bar_container {
@@ -278,10 +313,16 @@
 }
 .progressbar-text {
     top: 37px !important;
+    width: 100%;
+    right: 0;
+    position: absolute;
+    text-align: right;
+    /* clear: both; */
     line-height: 0.75 !important;
     font-size: 14px !important;
     font-weight: 600 !important;
     color: #262626 !important;
+    width: 50%;
 }
 .extra {
     width: 100%;
@@ -308,4 +349,225 @@
 .extra_button {
     border: solid 1px #ffffff;
     margin-top: 47px;
+}
+
+/* COURSES */
+.testimonials {
+    &.component .test:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .test_1 {
+        margin-top: 0px;
+    }
+
+    .locations {
+        display: flex;
+        gap: 16px;
+    }
+}
+
+/* BLOG */
+.blog {
+    background: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.blog_row {
+    margin-top: 100px;
+}
+.blog_col {
+    margin-bottom: 49px;
+}
+.blog_post_image {
+    width: 100%;
+}
+.blog_post_image img {
+    max-width: 100%;
+}
+.blog_post_title {
+    margin-top: 20px;
+}
+.blog_post_title a {
+    font-size: 24px;
+    font-weight: 400;
+    color: #262626;
+    line-height: 1.1;
+}
+.blog_post_title a:hover {
+    color: #75c8b4;
+}
+.blog_post_date {
+    margin-top: 4px;
+}
+.blog_post_date a {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #75c8b4;
+}
+.blog_post_text {
+    margin-top: 22px;
+}
+.blog_post_text p {
+    font-weight: 500;
+    color: #535353;
+}
+.blog_post_link {
+    margin-top: 36px;
+}
+.blog_post_link a {
+    font-size: 12px;
+    font-weight: 400;
+    color: #75c8b4;
+}
+.blog_button {
+    margin-top: 46px;
+}
+
+/* CONTACTS */
+.contact {
+    background: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.contact_logo .logo {
+    left: auto;
+
+    img {
+        width: 200px;
+    }
+}
+.contact_logo .logo > div {
+    color: #262626;
+}
+.contact_text {
+    margin-top: 30px;
+}
+.contact_list {
+    padding-left: 34px;
+    margin-top: 51px;
+    max-width: 230px;
+}
+.contact_list ul li:not(:last-of-type) {
+    margin-bottom: 26px;
+}
+.contact_list ul li > div:first-of-type > div {
+    width: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #75c8b4;
+    line-height: 1.714;
+}
+.contact_list ul li > div:last-of-type {
+    font-size: 14px;
+    font-weight: 400;
+    color: #535353;
+    line-height: 1.714;
+}
+.contact_title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #262626;
+    line-height: 0.75;
+}
+.contact_form_container {
+    margin-top: 45px;
+}
+.contact_input {
+    width: 100%;
+    height: 52px;
+    border: none;
+    outline: none;
+    background: #eff4f6;
+    padding-left: 25px;
+    border-left: solid 2px transparent;
+}
+.contact_input:focus,
+.contact_input:hover {
+    border-left: solid 2px #75c8b4;
+}
+.input_item {
+    margin-bottom: 17px;
+}
+.contact_input::-webkit-input-placeholder {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    font-style: italic;
+    color: #bdbdbd !important;
+}
+.contact_input:-moz-placeholder {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    font-style: italic;
+    color: #bdbdbd !important;
+}
+.contact_input::-moz-placeholder {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    font-style: italic;
+    color: #bdbdbd !important;
+}
+.contact_input:-ms-input-placeholder {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    font-style: italic;
+    color: #bdbdbd !important;
+}
+.contact_input::input-placeholder {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    font-style: italic;
+    color: #bdbdbd !important;
+}
+.contact_textarea {
+    padding-top: 15px;
+    height: 190px;
+}
+.contact_button {
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    z-index: 1;
+    margin-top: 17px;
+}
+.contact_button::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: #75c8b4;
+    width: 130px;
+    height: 100%;
+    border-radius: 22px;
+    z-index: -1;
+    content: "";
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.contact_button:hover::before {
+    width: 100%;
+}
+
+/* SLIDESHOW */
+.slideshow {
+    display: flex;
+    flex-wrap: wrap; /* Permette agli elementi di andare a capo */
+    gap: 16px; /* Spaziatura tra le immagini (opzionale) */
+
+    img {
+        flex: 1 1 calc(33.333% - 16px); /* Ogni immagine occupa un terzo della larghezza meno il gap */
+        max-width: calc(33.333% - 16px); /* Limita la larghezza al valore calcolato */
+    }
 }

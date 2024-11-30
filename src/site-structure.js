@@ -18,11 +18,27 @@ import about2Img from "images/a2.png";
 import teamImg from "images/team.jpg";
 import testimonialImg from "images/testimonials.jpg";
 import aboutPageImg from "images/about_page.jpg";
+import servicesPageImg from "images/services.jpg";
+import contactsPageImg from "images/contact.jpg";
 import skillsImg from "images/skills.jpg";
+import coursesImg from "images/courses.jpg";
 
 import team1 from "images/team_1.jpg";
 import team2 from "images/team_2.jpg";
 import team3 from "images/team_3.jpg";
+
+import gallery1 from "images/gallery/blog_7.jpg";
+import gallery2 from "images/gallery/blog_4.jpg";
+import gallery3 from "images/gallery/blog_11.jpg";
+import gallery4 from "images/gallery/blog_12.jpg";
+import gallery5 from "images/gallery/blog_5.jpg";
+import gallery6 from "images/gallery/blog_6.jpg";
+import gallery7 from "images/gallery/blog_1.jpg";
+import gallery8 from "images/gallery/blog_8.jpg";
+import gallery9 from "images/gallery/blog_9.jpg";
+import gallery10 from "images/gallery/blog_10.jpg";
+import gallery11 from "images/gallery/blog_3.jpg";
+import gallery12 from "images/gallery/blog_2.jpg";
 
 const homePage = {
 	pageTitle: "Home",
@@ -36,8 +52,8 @@ const aboutPage = {
 	pageTitle: "About us",
 	description: "Pilates, Yoga, Fitness, Spinning & molto altro",
 	section: "About",
-	linkName: "About",
-	route: "/about",
+	linkName: "About us",
+	route: "/about-us",
 	heroImg: aboutPageImg,
 	aboutImg: about2Img,
 };
@@ -48,22 +64,42 @@ const servicesPage = {
 	section: "Servizi",
 	linkName: "Servizi",
 	route: "/servizi",
+	heroImg: servicesPageImg,
 };
 
 const galleryPage = {
 	pageTitle: "Gallery",
-	description: "Gallery",
+	description: "Una collezione dei momenti che puoi vivere con noi",
 	section: "Gallery",
 	linkName: "Gallery",
 	route: "/gallery",
+	heroImg: servicesPageImg,
 };
 
 const contactsPage = {
 	pageTitle: "Contatti",
-	description: "Contatti",
+	description: "Per non perderci mai di vista",
 	section: "Contatti",
 	linkName: "Contatti",
 	route: "/contatti",
+	heroImg: contactsPageImg,
+	title: "Compila il form per scriverci",
+	description:
+		"Lezioni di yoga per aumentare flessibilità, forza e rilassamento mentale.",
+	form: {
+		fields: [
+			{
+				placeholder: "Nome e Cognome",
+			},
+			{
+				placeholder: "E-mail",
+			},
+			{
+				placeholder: "Scrivi qui il messaggio",
+			},
+		],
+		cta: "Contattaci",
+	},
 };
 
 const hero = {
@@ -125,9 +161,9 @@ const skills = {
 	description:
 		"Da Freetime ogni allenamento è un trionfo, ogni sudore una medaglia, ogni giorno una nuova sfida vinta. Non importa da dove parti, conta dove vuoi arrivare. Lasciati ispirare, lascia che la tua energia prenda il volo. Vieni a scoprire il luogo dove il fitness incontra la passione. Benvenuto in Freetime, dove la tua forza interiore trova la sua vera espressione",
 	skills: [
-		{ name: "Fitness", percentage: "100%", width: 100 },
-		{ name: "Pilates", percentage: "70%", width: 70 },
-		{ name: "Yoga", percentage: "60%", width: 60 },
+		{ name: "Fitness", percentage: 100 },
+		{ name: "Pilates", percentage: 70 },
+		{ name: "Yoga", percentage: 60 },
 	],
 };
 
@@ -204,9 +240,80 @@ const services = {
 	],
 };
 
+const coursesProgram = {
+	coursesImg: coursesImg,
+	overtitle: "non perdere un allenamento",
+	title: "Programma dei corsi",
+	description:
+		"Scarica il programma dei corsi per la sede di tuo interesse, puoi scegliere tra Somaglia o San Fiorano",
+	locations: [
+		{
+			name: "San Fiorano",
+			link: "https://www.google.it",
+		},
+		{
+			name: "Somaglia",
+			link: "https://www.google.it",
+		},
+	],
+};
+
+const gallery = {
+	images: [
+		{
+			source: gallery1,
+			alt: "Freetime Fitness",
+		},
+		{
+			source: gallery2,
+			alt: "Freetime Fitness",
+		},
+		{
+			source: gallery3,
+			alt: "Freetime Fitness",
+		},
+		{
+			source: gallery4,
+			alt: "Freetime Fitness",
+		},
+		{
+			source: gallery5,
+			alt: "Freetime Fitness",
+		},
+		{
+			source: gallery6,
+			alt: "Freetime Fitness",
+		},
+		{
+			source: gallery7,
+			alt: "Freetime Fitness",
+		},
+		{
+			source: gallery8,
+			alt: "Freetime Fitness",
+		},
+		{
+			source: gallery9,
+			alt: "Freetime Fitness",
+		},
+		{
+			source: gallery10,
+			alt: "Freetime Fitness",
+		},
+		{
+			source: gallery11,
+			alt: "Freetime Fitness",
+		},
+		{
+			source: gallery12,
+			alt: "Freetime Fitness",
+		},
+	],
+};
+
 const footer = {
 	inputPlaceholder: "Scrivi qui la tua email...",
-	cta: "Vai",
+	cta: "Iscriviti",
 };
 
 const contacts = {
@@ -227,6 +334,8 @@ export {
 	skills,
 	testimonials,
 	services,
+	coursesProgram,
+	gallery,
 	footer,
 	contacts,
 };

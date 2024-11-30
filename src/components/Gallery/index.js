@@ -11,7 +11,7 @@ import gallery4 from "images/gallery/gallery_4.jpg";
 import gallery5 from "images/gallery/gallery_5.jpg";
 
 const Gallery = () => {
-    const owlCarouselRef = useRef(null);
+	const owlCarouselRef = useRef(null);
 	const items = [gallery1, gallery2, gallery3, gallery4, gallery5];
 
 	useEffect(() => {

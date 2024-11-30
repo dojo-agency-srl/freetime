@@ -1,17 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useLocation } from "react-router-dom";
 
 import { homePage, aboutPage, about } from "site-structure.js";
 
 import "styles/custom.scss";
 
-const About = ({ title }) => {
+const About = () => {
 	let location;
 	location = useLocation();
-
-	useEffect(() => {
-		document.title = title;
-	}, [title]);
 
 	if (location.pathname.indexOf(homePage.route) > -1) {
 		return (
@@ -26,13 +22,9 @@ const About = ({ title }) => {
 										{about.titleLight} <span>{about.titleBold}</span>
 									</div>
 								</div>
-								<div className="text_highlight">
-									{about.subtitle}.
-								</div>
+								<div className="text_highlight">{about.subtitle}.</div>
 								<div className="about_text">
-									<p>
-										{about.description}.
-									</p>
+									<p>{about.description}.</p>
 								</div>
 								<div className="button accent about_button">
 									<a href="#">{about.cta}</a>
@@ -54,8 +46,7 @@ const About = ({ title }) => {
 				</div>
 			</div>
 		);
-	}
-	else {
+	} else {
 		return (
 			<div className="about small">
 				<div className="container about_container">
@@ -64,19 +55,25 @@ const About = ({ title }) => {
 							<div className="about_content">
 								<div className="section_title_container">
 									<div className="section_subtitle">{about.overtitle}</div>
-									<div className="section_title">{about.titleLight} <span>{about.titleBold}</span></div>
+									<div className="section_title">
+										{about.titleLight} <span>{about.titleBold}</span>
+									</div>
 								</div>
 								<div className="text_highlight">{about.subtitle}.</div>
 								<div className="about_text">
 									<p>{about.description}.</p>
 								</div>
-								<div className="button about_button"><a href="#">{about.cta}</a></div>
+								<div className="button about_button">
+									<a href="#">{about.cta}</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div className="about_background alternative">
-					<div className="about_image"><img src={aboutPage.aboutImg} alt="" /></div>
+					<div className="about_image">
+						<img src={aboutPage.aboutImg} alt="" />
+					</div>
 				</div>
 			</div>
 		);

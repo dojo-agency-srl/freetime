@@ -33,96 +33,38 @@ const Skills = () => {
 							</div>
 
 							<ul className="progress_bar_container col_12 clearfix">
-								<li className="pb_item">
-									<div
-										id="skill_1_pbar"
-										className="skill_bars"
-										data-perc="1.00"
-										data-name="skill_1_pbar">
-										<svg
-											viewBox="0 0 100 4"
-											preserveAspectRatio="none"
-											sx="width: 100%; height: 100%;">
-											<path
-												d="M 0,2 L 100,2"
-												stroke="transparent"
-												strokeWidth="1"
-												fillOpacity="0"></path>
-											<path
-												d="M 0,2 L 100,2"
-												stroke="#ff9711"
-												strokeWidth="4"
-												fillOpacity="0"
-												sx="stroke-dasharray: 100, 100; stroke-dashoffset: 0;"></path>
-										</svg>
+								{skills.skills.map((skill, index) => (
+									<li className="pb_item">
+										<div
+											id="skill_1_pbar"
+											className="skill_bars"
+											data-perc="1.00"
+											data-name="skill_1_pbar">
+											<svg
+												viewBox="0 0 100 4"
+												preserveAspectRatio="none"
+												style={{ height: "100%", width: skill.percentage + "%" }}>
+												<path
+													d="M 0,2 L 100,2"
+													stroke="transparent"
+													strokeWidth="1"
+													fillOpacity="0"></path>
+												<path
+													d="M 0,2 L 100,2"
+													stroke="#75c8b4"
+													strokeWidth="4"
+													fillOpacity="0"
+													sx="stroke-dasharray: 100, 100; stroke-dashoffset: 0;"></path>
+											</svg>
+										</div>
 										<div
 											className="progressbar-text"
 											sx="color: rgb(113, 122, 133); position: absolute; right: 0px; top: -20px; padding: 0px; margin: 0px;">
-											100 %
+											{skill.percentage} %
 										</div>
-									</div>
-									<h5>Fitness</h5>
-								</li>
-								<li className="pb_item">
-									<div
-										id="skill_2_pbar"
-										className="skill_bars"
-										data-perc="0.70"
-										data-name="skill_2_pbar">
-										<svg
-											viewBox="0 0 100 4"
-											preserveAspectRatio="none"
-											sx="width: 100%; height: 100%;">
-											<path
-												d="M 0,2 L 100,2"
-												stroke="transparent"
-												strokeWidth="1"
-												fillOpacity="0"></path>
-											<path
-												d="M 0,2 L 100,2"
-												stroke="#ff9711"
-												strokeWidth="4"
-												fillOpacity="0"
-												sx="stroke-dasharray: 100, 100; stroke-dashoffset: 30;"></path>
-										</svg>
-										<div
-											className="progressbar-text"
-											sx="color: rgb(113, 122, 133); position: absolute; right: 0px; top: -20px; padding: 0px; margin: 0px;">
-											70 %
-										</div>
-									</div>
-									<h5>Pilates</h5>
-								</li>
-								<li className="pb_item">
-									<div
-										id="skill_3_pbar"
-										className="skill_bars"
-										data-perc="0.85"
-										data-name="skill_3_pbar">
-										<svg
-											viewBox="0 0 100 4"
-											preserveAspectRatio="none"
-											sx="width: 100%; height: 100%;">
-											<path
-												d="M 0,2 L 100,2"
-												stroke="transparent"
-												strokeWidth="1"
-												fillOpacity="0"></path>
-											<path
-												d="M 0,2 L 100,2"
-												stroke="#ff9711"
-												strokeWidth="4"
-												fillOpacity="0"
-												sx="stroke-dasharray: 100, 100; stroke-dashoffset: 15;"></path>
-										</svg>
-										<div
-											className="progressbar-text"
-											sx="color: rgb(113, 122, 133); position: absolute; right: 0px; top: -20px; padding: 0px; margin: 0px;">
-											85 %
-										</div>
-									</div>
-									<h5>Yoga</h5>
-								</li>
+										<h5>{skill.name}</h5>
+									</li>
+								))}
 							</ul>
 						</div>
 					</div>
