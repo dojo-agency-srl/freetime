@@ -115,7 +115,7 @@ const Header = () => {
 				<div className="menu_content d-flex flex-column align-items-center justify-content-center text-center">
 					<ul>{renderRoutes()}</ul>
 				</div>
-				<div className="menu_phone d-flex flex-row align-items-center justify-content-start">
+				<div className="menu_phone accent d-flex flex-row align-items-center justify-content-start">
 					<FontAwesomeIcon icon={contacts.phoneIcon} className="accent-text" />
 					<span>
 						<Link to={`tel:${contacts.phone})`}>{contacts.phone}</Link>

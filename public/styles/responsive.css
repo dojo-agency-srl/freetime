@@ -25,58 +25,44 @@
 1. 1600px
 ************/
 
-@media only screen and (max-width: 1600px)
-{
-	
-}
+@media only screen and (max-width: 1600px) {}
 
 /************
 2. 1440px
 ************/
 
-@media only screen and (max-width: 1440px)
-{
-	
-}
+@media only screen and (max-width: 1440px) {}
 
 /************
 3. 1380px
 ************/
 
-@media only screen and (max-width: 1380px)
-{
-	
-}
+@media only screen and (max-width: 1380px) {}
 
 /************
 3. 1280px
 ************/
 
-@media only screen and (max-width: 1280px)
-{
-	
-}
+@media only screen and (max-width: 1280px) {}
 
 /************
 4. 1199px
 ************/
 
-@media only screen and (max-width: 1199px)
-{
-	.phone
-	{
+@media only screen and (max-width: 1199px) {
+	.phone {
 		display: none !important;
 	}
-	.menu .phone
-	{
+
+	.menu .phone {
 		display: block !important;
 	}
-	.logo
-	{
+
+	.logo {
 		left: auto;
 	}
-	.main_nav
-	{
+
+	.main_nav {
 		margin-left: 90px;
 	}
 }
@@ -85,59 +71,91 @@
 4. 1100px
 ************/
 
-@media only screen and (max-width: 1100px)
-{
-	
-}
+@media only screen and (max-width: 1100px) {}
 
 /************
 5. 1024px
 ************/
 
-@media only screen and (max-width: 1024px)
-{
-	
-}
+@media only screen and (min-width: 992px) {}
 
 /************
 6. 991px
 ************/
 
-@media only screen and (max-width: 991px)
-{
-	.hamburger
-	{
+@media only screen and (max-width: 991px) {
+	.hamburger {
 		display: block;
 	}
-	.hamburger_bar
-	{
+
+	.hamburger_bar {
 		display: block;
 	}
-	.main_nav
-	{
+
+	.main_nav {
 		display: none;
 	}
-	.box
-	{
+
+	.box {
 		width: 100%;
 	}
-	.box:not(:last-child)
-	{
-		margin-bottom: 60px;
+
+	.box:not(:last-child) {
+		margin-bottom: 0;
 	}
-	.about
-	{
-		margin-top: 28px;
+
+	.home.small {
+		height: 260px !important;
 	}
-	.about_background
-	{
+
+	.about.small {
+		padding-bottom: 80px !important;
+	}
+
+	.about.small .about_background {
+		bottom: auto;
+		right: auto;
+	}
+
+	.about.small .about_image {
+		z-index: 2;
+	}
+
+	.home.small .home_title {
+		margin-top: 0 !important;
+	}
+
+	.about {
+		margin-top: 8px;
+	}
+
+	.about_background {
 		position: relative;
 		bottom: auto;
 		right: auto;
-		margin-top: -50px;
+		margin-top: 0;
+		bottom: 80px;
+		right: -80px;
 	}
-	.about_image
-	{
+
+	.about_background::before {
+		display: none;
+	}
+
+	.about_background::after {
+		position: absolute;
+		top: auto;
+		bottom: -80px;
+		right: 0;
+		width: 150%;
+		height: 80px;
+		background: #fff;
+		display: block;
+		content: '';
+		z-index: 1;
+	}
+
+	.about_image {
 		position: relative;
 		top: auto;
 		left: auto;
@@ -146,40 +164,277 @@
 		-ms-transform: rotate(0deg);
 		-o-transform: rotate(0deg);
 		transform: rotate(0deg);
+		z-index: 1;
 	}
-	.about_image img
-	{
+
+	.about.small .about_image {
+		bottom: -72px !important;
+	}
+
+	.about_image img {
 		max-width: 100%;
 	}
-	.about_content
-	{
+
+	.about_content {
 		-webkit-transform: none;
 		-moz-transform: none;
 		-ms-transform: none;
 		-o-transform: none;
 		transform: none;
 	}
-	.test_1
-	{
-		margin-top: 106px;
-		margin-bottom: 82px;
+
+	.test_1 {
+		margin-top: 40px;
+		margin-bottom: 40px;
 	}
-	.test_content
-	{
+
+	.test_content {
 		padding-left: 0;
 	}
-	.gallery_slider_container
-	{
+
+	.gallery_slider_container {
 		width: 150%;
 		left: -25%;
 	}
-	.blog_col:not(:last-child)
-	{
+
+	.blog_col:not(:last-child) {
 		margin-bottom: 60px;
 	}
-	.footer_nav ul li:not(:last-of-type)
-	{
+
+	.footer_nav ul li:not(:last-of-type) {
 		margin-right: 40px;
+	}
+
+	.home_container {
+		top: 110px;
+	}
+
+	.team {
+		padding-top: 104px !important;
+		padding-bottom: 40px !important;
+	}
+
+	.team_row {
+		margin-top: 40px !important;
+	}
+
+	.team_item {
+		margin-bottom: 80px !important;
+	}
+
+	.skills {
+		padding-top: 60px !important;
+		padding-bottom: 40px !important;
+	}
+
+	.skills_content {
+		margin-top: 40px !important;
+	}
+
+	.services.small .overlay {
+		bottom: -60px !important;
+	}
+
+	.testimonials.component {
+		padding-bottom: 60px !important;
+	}
+
+	.blog {
+		padding-bottom: 40px !important;
+	}
+
+	.blog_row {
+		margin-top: 40px !important;
+	}
+
+	.slideshow {
+		margin-left: 16px !important;
+	}
+
+	.contact .contact_text {
+		margin-top: 0;
+	}
+
+	.services {
+		padding-bottom: 40px !important;
+	}
+
+	.service_title {
+		padding-left: 8px;
+	}
+
+	.newsletter_button {
+		position: static !important;
+		width: 100% !important;
+	}
+
+	.newsletter_form {
+		display: flex !important;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	.hamburger_bar {
+		right: calc((100vw - 510px) / 2 - 15px);
+	}
+
+	.home_title {
+		font-size: 48px !important;
+		margin-top: -4px;
+	}
+
+	.home_subtitle {
+		font-size: 14px;
+		margin-top: -4px;
+	}
+
+	.home_button {
+		margin-top: 37px;
+	}
+
+	.service_col:nth-last-child(n+4) {
+		margin-bottom: 0px;
+	}
+
+	.service_col:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	p {
+		font-size: 13px;
+	}
+
+	.header_content,
+	.header.scrolled .header_content {
+		height: 65px;
+	}
+
+	.hamburger_bar {
+		right: 0px;
+		height: 65px;
+	}
+
+	.home_title {
+		font-size: 48px;
+	}
+
+	.section_title {
+		font-size: 40px;
+		text-wrap: unset !important;
+	}
+
+	.video_icon {
+		width: 25px;
+		height: 25px;
+		margin-right: 8px;
+	}
+
+	.video_icon i {
+		font-size: 8px;
+	}
+
+	.video_text {
+		font-size: 14px;
+	}
+
+	.home_button {
+		margin-top: 33px;
+	}
+
+	.home_button a {
+		font-size: 14px;
+	}
+
+	.text_highlight {
+		font-size: 15px;
+	}
+
+	.blog {
+		padding-top: 0 !important;
+	}
+
+	.testimonials {
+		padding-top: 120px;
+	}
+
+	.services,
+	.about {
+		padding-top: 40px;
+	}
+
+	.services_row {
+		margin-top: 20px;
+	}
+
+	.footer_content {
+		padding-bottom: 40px !important;
+	}
+
+	.footer_nav ul li:not(:last-of-type) {
+		margin-right: 0px;
+		margin-bottom: 10px;
+	}
+
+	.footer_image {
+		opacity: 0.1 !important;
+		width: 120%;
+		bottom: auto;
+		top: 0;
+	}
+
+	.boxes {
+		margin-top: -240px;
+	}
+
+	.box {
+		padding-left: 40px;
+		padding-top: 40px;
+		padding-right: 40px;
+		padding-bottom: 40px;
+	}
+
+	.box_icon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.test:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	.testimonials {
+		padding-bottom: 40px;
+	}
+
+	.service_icon {
+		width: 48px;
+		height: 48px;
+	}
+
+	.services.small .services_row {
+		margin-top: 24px !important;
+	}
+
+	.contact_list {
+		padding-left: 0 !important;
+		margin-top: 24px !important;
+		max-width: 100% !important;
+	}
+
+	.contact .contact_col {
+		margin-top: 24px;
+	}
+
+	.contact .overlay {
+		bottom: -56px !important;
+	}
+
+	.testimonials.component .col-lg-6:not(:first-child) {
+		margin-top: 20px;
+	}
+
+	.testimonials.component .test_text {
+		margin-top: 0;
 	}
 }
 
@@ -187,60 +442,81 @@
 7. 959px
 ************/
 
-@media only screen and (max-width: 959px)
-{
-	
-}
+@media only screen and (max-width: 959px) {}
 
 /************
 8. 880px
 ************/
 
-@media only screen and (max-width: 880px)
-{
-	
-}
+@media only screen and (max-width: 880px) {}
 
 /************
 9. 768px
 ************/
 
-@media only screen and (max-width: 768px)
-{
-	
-}
+@media only screen and (max-width: 768px) {}
 
 /************
 10. 767px
 ************/
 
-@media only screen and (max-width: 767px)
-{
-	.hamburger_bar
-	{
-		right: calc((100vw - 510px) / 2 - 15px);
+@media only screen and (max-width: 767px) {
+	.hamburger {
+		right: 90px;
 	}
-	.home_title
-	{
-		font-size: 72px;
-		margin-top: -4px;
+
+	.home_container {
+		top: 200px;
 	}
-	.home_subtitle
-	{
-		font-size: 14px;
-		margin-top: -4px;
+
+	.home_title {
+		font-size: 72px !important;
 	}
-	.home_button
-	{
-		margin-top: 37px;
+
+	.about_background {
+		bottom: 90px !important;
 	}
-	.service_col:nth-last-child(n+4)
-	{
-		margin-bottom: 0px;
+
+	.about_background::after {
+		height: 110px !important;
+		z-index: 0 !important;
 	}
-	.service_col:not(:last-child)
-	{
-		margin-bottom: 79px;
+
+	.home.small {
+		height: 320px !important;
+	}
+
+	.home.small .home_container {
+		top: 110px;
+	}
+
+	.about_background::after {
+		bottom: -170px !important;
+	}
+
+	.team {
+		padding-top: 140px !important;
+	}
+
+	.about.small .about_image {
+		bottom: -170px !important;
+		width: 50% !important;
+	}
+
+	.services.small .overlay {
+		bottom: -110px !important;
+	}
+
+	.testimonials {
+		padding-top: 160px;
+	}
+
+	.contact .overlay {
+		bottom: -120px !important;
+	}
+
+	.hamburger {
+		right: 60px !important;
 	}
 }
 
@@ -248,76 +524,42 @@
 11. 575px
 ************/
 
-@media only screen and (max-width: 575px)
-{
-	p
-	{
-		font-size: 13px;
+@media only screen and (max-width: 575px) {
+	.home_title {
+		font-size: 48px !important;
 	}
-	.header_content,
-	.header.scrolled .header_content
-	{
-		height: 65px;
+
+	.hamburger {
+		right: 0;
 	}
-	.hamburger_bar
-	{
-		right: 0px;
-		height: 65px;
+
+	.about_background::after {
+		bottom: -80px !important;
 	}
-	.home_title
-	{
-		font-size: 48px;
+
+	.testimonials {
+		padding-top: 100px;
 	}
-	.section_title
-	{
-		font-size: 48px;
+
+	.testimonials.component {
+		padding-top: 160px;
 	}
-	.video_icon
-	{
-		width: 25px;
-		height: 25px;
-		margin-right: 8px;
+
+	.home.small {
+		height: 280px !important;
 	}
-	.video_icon i
-	{
-		font-size: 8px;
+
+	.about.small .about_image {
+		bottom: -140px !important;
+		width: 50% !important;
 	}
-	.video_text
-	{
-		font-size: 14px;
+
+	.about.small .about_background::after {
+		bottom: -170px !important;
 	}
-	.home_button
-	{
-		margin-top: 33px;
-	}
-	.home_button a
-	{
-		font-size: 14px;
-	}
-	.text_highlight
-	{
-		font-size: 15px;
-	}
-	.blog
-	{
-		padding-top: 244px;
-	}
-	.testimonials
-	{
-		padding-top: 244px;
-	}
-	.footer_content
-	{
-		padding-bottom: 40px;
-	}
-	.footer_nav ul li:not(:last-of-type)
-	{
-		margin-right: 0px;
-		margin-bottom: 10px;
-	}
-	.footer_image
-	{
-		opacity: 0.5;
+
+	.team {
+		padding-top: 120px !important;
 	}
 }
 
@@ -325,34 +567,22 @@
 11. 539px
 ************/
 
-@media only screen and (max-width: 539px)
-{
-	
-}
+@media only screen and (max-width: 539px) {}
 
 /************
 12. 480px
 ************/
 
-@media only screen and (max-width: 480px)
-{
-	
-}
+@media only screen and (max-width: 480px) {}
 
 /************
 13. 479px
 ************/
 
-@media only screen and (max-width: 479px)
-{
-	
-}
+@media only screen and (max-width: 479px) {}
 
 /************
 14. 400px
 ************/
 
-@media only screen and (max-width: 400px)
-{
-	
-}
+@media only screen and (max-width: 400px) {}

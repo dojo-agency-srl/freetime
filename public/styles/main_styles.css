@@ -493,7 +493,7 @@ section {
 .menu_hamburger {
 	display: block;
 	position: relative;
-	width: 12px;
+	width: 24px;
 	height: 12px;
 }
 
@@ -537,7 +537,7 @@ section {
 }
 
 .menu_toggle span {
-	display: block;
+	display: none;
 	position: relative;
 	font-size: 16px;
 	font-weight: 700;
@@ -588,7 +588,7 @@ section {
 	font-size: 24px;
 	text-transform: uppercase;
 	color: rgba(255, 255, 255, 1);
-	font-weight: bold;
+	font-weight: 600;
 	letter-spacing: 0.075em;
 }
 
@@ -615,6 +615,7 @@ section {
 	border-radius: 22px;
 	border: solid 1px #98DBC8;
 	box-shadow: 0 0 1px 0 #98DBC8 inset, 0 0 1px 0 #98DBC8;
+	text-wrap: nowrap;
 }
 
 .menu_phone i {
@@ -1273,7 +1274,8 @@ section {
 
 .newsletter_button {
 	position: absolute;
-	top: 0;
+	top: auto;
+	bottom: 0;
 	right: 0;
 	width: 61px;
 	height: 61px;
@@ -1289,7 +1291,6 @@ section {
 }
 
 .copyright {
-	padding-right: 15px;
 	font-size: 12px;
 	font-weight: 400;
 	color: #fff;
@@ -1297,7 +1298,7 @@ section {
 	margin-top: 33px;
 }
 
-.copyright a {
+a {
 	color: var(--base-color);
 	text-decoration: underline;
 }

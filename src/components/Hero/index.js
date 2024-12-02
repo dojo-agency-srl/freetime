@@ -1,9 +1,10 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "styles/font-awesome.scss";
 
-import { hero } from "site-structure.js";
+import { hero, contactsPage } from "site-structure.js";
 
 const Hero = () => {
 	return (
@@ -35,7 +36,7 @@ const Hero = () => {
 									<div className="home_title">{hero.title}</div>
 									<div className="home_subtitle">{hero.subtitle}</div>
 									<div className="button home_button ml-auto mr-auto">
-										<a href="#">{hero.cta}</a>
+										<Link to={contactsPage.route}>{hero.cta}</Link>
 									</div>
 								</div>
 							</div>
@@ -50,18 +51,16 @@ const Hero = () => {
 						<div className="col">
 							<div className="boxes_container d-flex flex-lg-row flex-column align-items-start justify-content-start">
 								{hero.boxes.map((box, index) => (
-                                    <div className="box">
-                                        <div className="box_icon d-flex flex-column align-items-center justify-content-center">
-                                            <FontAwesomeIcon icon={box.icon} />
-                                        </div>
-                                        <div className="box_title">{box.title}</div>
-                                        <div className="box_text">
-                                            <p>
-                                                {box.description}.
-                                            </p>
-                                        </div>
-                                    </div>
-                                ))}
+									<div className="box">
+										<div className="box_icon d-flex flex-column align-items-center justify-content-center">
+											<FontAwesomeIcon icon={box.icon} />
+										</div>
+										<div className="box_title">{box.title}</div>
+										<div className="box_text">
+											<p>{box.description}.</p>
+										</div>
+									</div>
+								))}
 							</div>
 						</div>
 					</div>

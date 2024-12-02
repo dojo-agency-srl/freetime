@@ -130,6 +130,21 @@
     }
 }
 
+.menu_phone {
+    &.accent {
+        background: transparent;
+        border: solid 1px var(--accent-color);
+
+        a {
+            color: var(--accent-color);
+        }
+    }
+
+    svg {
+        margin-right: 8px;
+    }
+}
+
 /* ICONE CORSI */
 .service_icon svg {
     width: 100%;
@@ -167,7 +182,7 @@
     padding-bottom: 80px;
 
     &.small {
-        padding-top: 60px;
+        padding-top: 40px;
         padding-bottom: 40px;
 
         .services_row {
@@ -196,7 +211,7 @@
 
     .home_title {
         font-size: 72px;
-        margin-top: 100px;
+        margin-top: 60px;
     }
 
     .home_subtitle {
@@ -357,7 +372,7 @@
         margin-bottom: 0;
     }
 
-    .test_1 {
+    &.component .test_1 {
         margin-top: 0px;
     }
 
@@ -430,7 +445,18 @@
     background: #ffffff;
     padding-top: 20px;
     padding-bottom: 100px;
+
+    .overlay {
+        left: -100px;
+        bottom: -220px;
+        z-index: 1;
+    }
+
+    .contact_col {
+        z-index: 2;
+    }
 }
+
 .contact_logo .logo {
     left: auto;
 
@@ -469,7 +495,7 @@
     font-size: 24px;
     font-weight: 400;
     color: #262626;
-    line-height: 0.75;
+    line-height: 1;
 }
 .contact_form_container {
     margin-top: 45px;
@@ -488,7 +514,7 @@
     border-left: solid 2px #75c8b4;
 }
 .input_item {
-    margin-bottom: 17px;
+    margin-bottom: 12px;
 }
 .contact_input::-webkit-input-placeholder {
     font-size: 12px !important;
@@ -559,6 +585,9 @@
 .contact_button:hover::before {
     width: 100%;
 }
+.text-danger {
+    margin-bottom: 12px !important;
+}
 
 /* SLIDESHOW */
 .slideshow {
@@ -569,5 +598,67 @@
     img {
         flex: 1 1 calc(33.333% - 16px); /* Ogni immagine occupa un terzo della larghezza meno il gap */
         max-width: calc(33.333% - 16px); /* Limita la larghezza al valore calcolato */
+    }
+}
+
+/* CUSTOM CHECKBOX */
+.acceptance-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .acceptance-checkbox {
+        display: none; // Nascondi il checkbox originale
+
+        &:checked + .acceptance-label {
+            &::before {
+                background-color: var(--base-color);
+                border-color: var(--base-color);
+            }
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+
+    .acceptance-label {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        position: relative;
+        padding-left: 1.5rem;
+        cursor: pointer;
+        line-height: 1.5; // Migliora l'aspetto su righe multiple
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1rem;
+            height: 1rem;
+            border: 2px solid var(--base-color);
+            border-radius: 4px;
+            background-color: #fff;
+            transition:
+                background-color 0.3s,
+                border-color 0.3s;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0.35rem;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+            width: 0.25rem;
+            height: 0.5rem;
+            border: solid #fff;
+            border-width: 0 2px 2px 0;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
     }
 }

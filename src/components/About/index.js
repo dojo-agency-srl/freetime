@@ -1,7 +1,7 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-import { homePage, aboutPage, about } from "site-structure.js";
+import { homePage, aboutPage, contactsPage, about } from "site-structure.js";
 
 import "styles/custom.scss";
 
@@ -9,7 +9,7 @@ const About = () => {
 	let location;
 	location = useLocation();
 
-	if (location.pathname.indexOf(homePage.route) > -1) {
+	if (location.pathname.includes(homePage.route)) {
 		return (
 			<div className="about">
 				<div className="container about_container">
@@ -27,7 +27,7 @@ const About = () => {
 									<p>{about.description}.</p>
 								</div>
 								<div className="button accent about_button">
-									<a href="#">{about.cta}</a>
+									<Link to={aboutPage.route}>{about.cta}</Link>
 								</div>
 							</div>
 						</div>
@@ -64,7 +64,7 @@ const About = () => {
 									<p>{about.description}.</p>
 								</div>
 								<div className="button about_button">
-									<a href="#">{about.cta}</a>
+									<Link to={contactsPage.route}>{about.cta}</Link>
 								</div>
 							</div>
 						</div>

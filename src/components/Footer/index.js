@@ -63,8 +63,18 @@ const Footer = () => {
 										{renderRoutes()}
 									</ul>
 								</nav>
+
 								<div className="newsletter_container">
 									<form action="#" id="newsletter_form" className="newsletter_form">
+										<div class="acceptance-container">
+											<input type="checkbox" id="acceptance-checkbox" class="acceptance-checkbox" />
+											<label for="acceptance-checkbox" class="acceptance-label">
+												<div>
+													Letta la <Link to="">Privacy Policy</Link>, presto il mio consenso per l’invio
+													di comunicazioni promozionali
+												</div>
+											</label>
+										</div>
 										<input
 											type="text"
 											className="newsletter_input"
@@ -74,12 +84,13 @@ const Footer = () => {
 										<button className="newsletter_button">{footer.cta}</button>
 									</form>
 								</div>
-								<div className="copyright d-flex flex-row align-items-start justify-content-sm-center justify-content-center">
-									Copyright &copy;{new Date().getFullYear()} | All
-									rights reserved | Made by{" "}
-									<a href="https://www.dojoagency.it" target="_blank">
-										&nbsp;Dojo Agency
-									</a>
+								<div className="copyright d-flex flex-row align-items-start justify-content-center">
+									<div style={{ lineHeight: 1.5 }}>
+										Copyright &copy;{new Date().getFullYear()} | All rights reserved | Made by{" "}
+										<a href="https://www.dojoagency.it" target="_blank">
+											Dojo Agency
+										</a>
+									</div>
 								</div>
 								<a href="https://colorlib.com" target="_blank" style={{ display: "none" }}>
 									Colorlib

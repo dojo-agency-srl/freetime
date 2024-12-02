@@ -90,9 +90,8 @@ const contactsPage = {
 		fields: [
 			{
 				placeholder: "Nome e Cognome",
-			},
-			{
-				placeholder: "E-mail",
+				errorMessage: "Il nome è obbligatorio",
+				length: 5,
 			},
 			{
 				placeholder: "Scrivi qui il messaggio",
@@ -140,7 +139,7 @@ const about = {
 		"Entra in un mondo dove la tua energia prende vita e i tuoi limiti svaniscono. Freetime non è solo una palestra, ma un'esperienza trasformativa che ridefinisce il concetto di fitness",
 	description:
 		"Crediamo che il vero cambiamento inizi dalla passione. Per questo, in Freetime, non troverai solo attrezzi e pesi, ma un team di coach entusiasti e ispiratori pronti a spingerti oltre ogni limite. Ogni programma è pensato per accendere la scintilla che è in te, trasformando l'allenamento in un'avventura emozionante",
-	cta: "Contattaci",
+	cta: "Scopri di più",
 };
 
 const team = {
@@ -249,11 +248,15 @@ const coursesProgram = {
 	locations: [
 		{
 			name: "San Fiorano",
-			link: "https://www.google.it",
+			address: "via Milano 11, 26848 San Fiorano (LO)",
+			link:
+				"https://www.google.com/maps/embed/v1/place?q=via+Milano+11,+26848+San+Fiorano+(LO)&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
 		},
 		{
 			name: "Somaglia",
-			link: "https://www.google.it",
+			address: "via Prova 19, 26844 Somaglia (LO)",
+			link:
+				"https://www.google.com/maps/embed/v1/place?q=via+Milano+11,+26848+San+Fiorano+(LO)&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
 		},
 	],
 };
@@ -318,8 +321,10 @@ const footer = {
 
 const contacts = {
 	phone: "333 44 55 66 7",
+	phoneLabel: "Tel.",
 	phoneIcon: faPhone,
-	email: "",
+	email: "info@freetime.fitness",
+	emailLabel: "E-mail",
 };
 
 export {
