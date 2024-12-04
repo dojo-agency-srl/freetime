@@ -97,7 +97,7 @@ const contactsPage = {
 				placeholder: "Scrivi qui il messaggio",
 			},
 		],
-		cta: "Contattaci",
+		cta: "Invia",
 	},
 };
 
