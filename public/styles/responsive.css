@@ -579,10 +579,113 @@
 13. 479px
 ************/
 
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+	.hamburger {
+		right: 0 !important;
+	}
+
+	.home_container {
+		top: 220px;
+	}
+
+	.about_background {
+		bottom: 40px !important;
+		position: absolute;
+		height: auto;
+	}
+
+	.about_background::after {
+		bottom: -30px !important;
+	}
+
+	.about.small .about_background::after {
+		bottom: -40px !important;
+	}
+
+	.about.small .about_image {
+		bottom: -30px !important;
+		width: 100% !important;
+	}
+
+	.about {
+		padding-bottom: 160px;
+	}
+
+	.services.small .overlay {
+		bottom: -60px !important;
+	}
+
+	.testimonials.component {
+		padding-top: 120px;
+	}
+
+	.contact {
+		padding-bottom: 20px !important;
+	}
+
+	.contact .overlay {
+		bottom: -70px !important;
+	}
+}
 
 /************
 14. 400px
 ************/
 
-@media only screen and (max-width: 400px) {}
+@media only screen and (max-width: 400px) {
+	.hamburger {
+		right: 0 !important;
+	}
+
+	.home_container {
+		top: 120px;
+	}
+
+	.about_background {
+		bottom: 40px !important;
+		position: absolute;
+		height: auto;
+	}
+
+	.about_background::after {
+		bottom: -30px !important;
+	}
+
+	.about.small .about_background::after {
+		bottom: -40px !important;
+	}
+
+	.about.small .about_image {
+		bottom: -30px !important;
+		width: 100% !important;
+	}
+
+	.team {
+		padding-top: 100px !important;
+	}
+
+	.about {
+		padding-bottom: 140px;
+	}
+
+	.skills {
+		padding-top: 40px !important;
+		padding-bottom: 40px !important;
+	}
+
+	.services.small .overlay {
+		bottom: -60px !important;
+	}
+
+	.testimonials.component {
+		padding-top: 120px;
+	}
+
+	.contact {
+		padding-bottom: 20px !important;
+	}
+
+	.contact .overlay {
+		bottom: -70px !important;
+	}
+}

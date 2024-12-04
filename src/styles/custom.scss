@@ -629,7 +629,8 @@
         position: relative;
         padding-left: 1.5rem;
         cursor: pointer;
-        line-height: 1.5; // Migliora l'aspetto su righe multiple
+        line-height: 1.5;
+        margin-bottom: 16px;
 
         &::before {
             content: "";
