@@ -59,8 +59,8 @@ const aboutPage = {
 };
 
 const servicesPage = {
-	pageTitle: "Servizi",
-	description: "Servizi",
+	pageTitle: "Corsi e servizi",
+	description: "Dai uno sguardo alle discipline che proponiamo",
 	section: "Servizi",
 	linkName: "Servizi",
 	route: "/servizi",
@@ -198,7 +198,7 @@ const testimonials = {
 
 const services = {
 	overtitle: "la nostra proposta",
-	title: "Corsi",
+	title: "Corsi e servizi",
 	courses: [
 		{
 			icon: SelfImprovementOutlinedIcon,
