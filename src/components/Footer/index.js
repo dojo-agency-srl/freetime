@@ -61,6 +61,9 @@ const Footer = () => {
 								<nav className="footer_nav">
 									<ul className="d-flex flex-sm-row flex-column align-items-sm-start align-items-center justify-content-center">
 										{renderRoutes()}
+										<li>
+											<Link to="">Cookie Policy</Link>
+										</li>
 									</ul>
 								</nav>
 
