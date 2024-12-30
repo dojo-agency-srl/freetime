@@ -50,17 +50,21 @@ const Hero = () => {
 					<div className="row">
 						<div className="col">
 							<div className="boxes_container d-flex flex-lg-row flex-column align-items-start justify-content-start">
-								{hero.boxes.map((box, index) => (
-									<div className="box">
-										<div className="box_icon d-flex flex-column align-items-center justify-content-center">
-											<FontAwesomeIcon icon={box.icon} />
+								{hero.boxes.map((box, index) => {
+									const Icon = box.icon;
+
+									return (
+										<div className="box">
+											<div className="box_icon d-flex flex-column align-items-center justify-content-center">
+												<Icon />
+											</div>
+											<div className="box_title">{box.title}</div>
+											<div className="box_text">
+												<p>{box.description}.</p>
+											</div>
 										</div>
-										<div className="box_title">{box.title}</div>
-										<div className="box_text">
-											<p>{box.description}.</p>
-										</div>
-									</div>
-								))}
+									);
+								})}
 							</div>
 						</div>
 					</div>

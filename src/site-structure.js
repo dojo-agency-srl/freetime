@@ -11,6 +11,9 @@ import FlashOnOutlinedIcon from "@mui/icons-material/FlashOnOutlined";
 import FitnessCenterOutlinedIcon from "@mui/icons-material/FitnessCenterOutlined";
 import DirectionsRunOutlinedIcon from "@mui/icons-material/DirectionsRunOutlined";
 import SportsGymnasticsOutlinedIcon from "@mui/icons-material/SportsGymnasticsOutlined";
+import PeopleOutlineIcon from "@mui/icons-material/PeopleOutline";
+import EventAvailableIcon from "@mui/icons-material/EventAvailable";
+import RestaurantMenuIcon from "@mui/icons-material/RestaurantMenu";
 
 import heroImg from "images/index.jpg";
 import about1Img from "images/a1.png";
@@ -50,7 +53,7 @@ const homePage = {
 
 const aboutPage = {
 	pageTitle: "About us",
-	description: "Pilates, Yoga, Fitness, Spinning & molto altro",
+	description: "Tutto quello che c'è da sapere su Freetime",
 	section: "About",
 	linkName: "About us",
 	route: "/about-us",
@@ -110,19 +113,19 @@ const hero = {
 	cta: "Contattaci",
 	boxes: [
 		{
-			icon: faUser,
+			icon: PeopleOutlineIcon,
 			title: "Personal training",
 			description:
 				"Allenamento personalizzato dove un istruttore qualificato crea e supervisiona un programma di esercizi apposta per te",
 		},
 		{
-			icon: faCalendarCheck,
+			icon: EventAvailableIcon,
 			title: "Corsi di gruppo",
 			description:
 				"Lezioni di fitness di gruppo come yoga, pilates, spinning, zumba e aerobica. Un'esperienza sociale e motivante",
 		},
 		{
-			icon: faUtensils,
+			icon: RestaurantMenuIcon,
 			title: "Nutrizionista",
 			description:
 				"Consulenze nutrizionali per aiutare i clienti a creare piani alimentari equilibrati e sani, supportando gli obiettivi di fitness",
