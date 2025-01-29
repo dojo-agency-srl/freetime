@@ -1,25 +1,33 @@
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
-import { faUser } from "@fortawesome/free-regular-svg-icons";
-import { faCalendarCheck } from "@fortawesome/free-regular-svg-icons";
-import { faUtensils } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 import SelfImprovementOutlinedIcon from "@mui/icons-material/SelfImprovementOutlined";
 import DirectionsBikeRoundedIcon from "@mui/icons-material/DirectionsBikeRounded";
 import FlashOnOutlinedIcon from "@mui/icons-material/FlashOnOutlined";
+import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import FitnessCenterOutlinedIcon from "@mui/icons-material/FitnessCenterOutlined";
 import DirectionsRunOutlinedIcon from "@mui/icons-material/DirectionsRunOutlined";
 import SportsGymnasticsOutlinedIcon from "@mui/icons-material/SportsGymnasticsOutlined";
 import PeopleOutlineIcon from "@mui/icons-material/PeopleOutline";
+import PeopleIcon from "@mui/icons-material/People";
 import EventAvailableIcon from "@mui/icons-material/EventAvailable";
+import DescriptionIcon from "@mui/icons-material/Description";
 import RestaurantMenuIcon from "@mui/icons-material/RestaurantMenu";
+import MusicNoteIcon from "@mui/icons-material/MusicNote";
+import SportsHandballIcon from "@mui/icons-material/SportsHandball";
+import ManIcon from "@mui/icons-material/Man";
+import GroupsIcon from "@mui/icons-material/Groups";
+import SportsMmaIcon from "@mui/icons-material/SportsMma";
+import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
+import EscalatorWarningIcon from "@mui/icons-material/EscalatorWarning";
 
 import heroImg from "images/index.jpg";
+import heroVid from "video/12_06.mp4";
 import about1Img from "images/a1.png";
 import about2Img from "images/a2.png";
 import teamImg from "images/team.jpg";
-import testimonialImg from "images/testimonials.jpg";
+import testimonialImg from "images/testimonials__bg.png";
 import aboutPageImg from "images/about_page.jpg";
 import servicesPageImg from "images/services.jpg";
 import contactsPageImg from "images/contact.jpg";
@@ -62,8 +70,8 @@ const aboutPage = {
 };
 
 const servicesPage = {
-	pageTitle: "Corsi e servizi",
-	description: "Dai uno sguardo alle discipline che proponiamo",
+	pageTitle: "Servizi",
+	description: "Dai uno sguardo alle attività che proponiamo",
 	section: "Servizi",
 	linkName: "Servizi",
 	route: "/servizi",
@@ -81,20 +89,24 @@ const galleryPage = {
 
 const contactsPage = {
 	pageTitle: "Contatti",
-	description: "Per non perderci mai di vista",
+	description:
+		"Per informazioni compila il form con i tuoi dati e verrai ricontattato al più presto",
 	section: "Contatti",
 	linkName: "Contatti",
 	route: "/contatti",
 	heroImg: contactsPageImg,
 	title: "Compila il form per scriverci",
-	description:
-		"Lezioni di yoga per aumentare flessibilità, forza e rilassamento mentale.",
+	description2: "Enjoy your body",
 	form: {
 		fields: [
 			{
 				placeholder: "Nome e Cognome",
 				errorMessage: "Il nome è obbligatorio",
 				length: 5,
+			},
+			{
+				placeholder: "Numero di telefono",
+				errorMessage: "Il numero di telefono è obbligatorio",
 			},
 			{
 				placeholder: "Scrivi qui il messaggio",
@@ -106,29 +118,30 @@ const contactsPage = {
 
 const hero = {
 	image: heroImg,
+	video: heroVid,
 	overtitleIcon: faPlay,
 	overtitle: "Guarda il video di presentazione",
 	title: "In forma con noi",
-	subtitle: "Pilates, Yoga, Fitness, Spinning e molto altro",
+	subtitle: "Ci prendiamo cura del tuo benessere",
 	cta: "Contattaci",
 	boxes: [
 		{
 			icon: PeopleOutlineIcon,
 			title: "Personal training",
 			description:
-				"Allenamento personalizzato dove un istruttore qualificato crea e supervisiona un programma di esercizi apposta per te",
+				"Allenamento personalizzato con un istruttore qualificato per raggiungere i tuoi obiettivi",
+		},
+		{
+			icon: FitnessCenterIcon,
+			title: "Sala Fitness",
+			description:
+				"Macchinari TechnoGym di ultima generazione e schede personalizzate per un allenamento a 360°",
 		},
 		{
 			icon: EventAvailableIcon,
 			title: "Corsi di gruppo",
 			description:
-				"Lezioni di fitness di gruppo come yoga, pilates, spinning, zumba e aerobica. Un'esperienza sociale e motivante",
-		},
-		{
-			icon: RestaurantMenuIcon,
-			title: "Nutrizionista",
-			description:
-				"Consulenze nutrizionali per aiutare i clienti a creare piani alimentari equilibrati e sani, supportando gli obiettivi di fitness",
+				"La soluzione perfetta per rendere i tuoi allenamenti più coinvolgenti e divertenti",
 		},
 	],
 };
@@ -141,7 +154,7 @@ const about = {
 	subtitle:
 		"Entra in un mondo dove la tua energia prende vita e i tuoi limiti svaniscono. Freetime non è solo una palestra, ma un'esperienza trasformativa che ridefinisce il concetto di fitness",
 	description:
-		"Crediamo che il vero cambiamento inizi dalla passione. Per questo, in Freetime, non troverai solo attrezzi e pesi, ma un team di coach entusiasti e ispiratori pronti a spingerti oltre ogni limite. Ogni programma è pensato per accendere la scintilla che è in te, trasformando l'allenamento in un'avventura emozionante",
+		"Crediamo che il vero cambiamento inizi dalla passione. Per questo, in Freetime, non troverai solo attrezzature, ma un team di coach entusiasti e ispiratori pronti a spingerti oltre ogni limite. Ogni programma è pensato per accendere la scintilla che è in te, trasformando l'allenamento in un'avventura emozionante",
 	cta: "Scopri di più",
 };
 
@@ -150,9 +163,10 @@ const team = {
 	overtitle: "garanzia di professionalità",
 	title: "Il team",
 	members: [
-		{ name: "Alessandro Zibbra", job: "Content strategist", image: team3 },
-		{ name: "Debora Degradi", job: "Content strategist", image: team2 },
-		{ name: "Paolo Bassini", job: "Web designer", image: team1 },
+		{ name: "Alessandro", job: "Content strategist", image: team3 },
+		{ name: "Debora", job: "Content strategist", image: team2 },
+		{ name: "Paolo", job: "Web designer", image: team1 },
+		{ name: "Altro", job: "Web designer 2", image: team1 },
 	],
 };
 
@@ -176,25 +190,25 @@ const testimonials = {
 	ratingIcon: faStar,
 	reviews: [
 		{
-			name: "Nunziella Cammi",
+			name: "Gabriele B.",
 			date: "01/01/2024",
 			text:
-				"Una palestra con personale accogliente, empatico e competente allo stesso tempo, adatta a tutte le età... insomma ti fanno sentire a tuo agio!",
-			rating: 4,
+				"Vengo in questa palestra da anni. Staff di ragazzi bravissimi e preparati. Ambiente armonioso. Pulizia top. Voto 10.",
+			rating: 5,
 		},
 		{
-			name: "Silvia Sisti",
+			name: "Rossella 63",
 			date: "01/11/2023",
 			text:
-				"Adoro pilates... mi piace Alice come istruttrice per spiega, usa i termini tecnici e fornisce consigli di lettura specifici! Palestra accogliente e personale sempre gentile!!!!",
+				"Un mix perfetto di competenza professionale degli istruttori, cordialità, disponibilità.",
 			rating: 5,
 		},
 		{
 			name: "Francesca Di Bella",
 			date: "01/07/2022",
 			text:
-				"Spaziosa, pulita e luminosa. Gli spazi sono ben organizzati: vi sono numerosi attrezzi disposti in due sale e un’ampia sala corsi che propone esperienze motorie per tutti i gusti. E’ presente una sauna,Spogliatoi spaziosi, docce calde. Personale gentile e qualificato. Consigliatissimo.",
-			rating: 3,
+				"Istruttori e personal trainer sempre disponibili e professionali, sala pesi top. Posto famigliare, ti mette di buon umore.",
+			rating: 5,
 		},
 	],
 };
@@ -204,40 +218,101 @@ const services = {
 	title: "Corsi e servizi",
 	courses: [
 		{
-			icon: SelfImprovementOutlinedIcon,
-			name: "Yoga",
-			description:
-				"Lezioni di yoga per aumentare flessibilità, forza e rilassamento mentale",
+			"Sala fitness": [
+				{
+					icon: FitnessCenterOutlinedIcon,
+					name: "Attrezzature",
+					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+				},
+				{
+					icon: DescriptionIcon,
+					name: "Schede allenamento",
+					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+				},
+				{
+					icon: GroupsIcon,
+					name: "Assistenza di sala",
+					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+				},
+			],
 		},
 		{
-			icon: SportsGymnasticsOutlinedIcon,
-			name: "Pilates",
-			description:
-				"Rafforza il core e migliora la postura attraverso esercizi a basso impatto",
+			"Servizi integrativi": [
+				{
+					icon: PeopleIcon,
+					name: "Personal training",
+					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+				},
+				{
+					icon: SportsGymnasticsOutlinedIcon,
+					name: "Massaggi sportivi",
+					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+				},
+				{
+					icon: RestaurantMenuIcon,
+					name: "Nutrizionista",
+					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+				},
+			],
 		},
 		{
-			icon: DirectionsBikeRoundedIcon,
-			name: "Spinning",
-			description:
-				"Allenamento cardio intenso su bici stazionaria, perfetto per bruciare calorie",
-		},
-		{
-			icon: FlashOnOutlinedIcon,
-			name: "HIIT",
-			description:
-				"Sessioni di allenamento intervallato ad alta intensità per massimizzare la perdita di grasso",
-		},
-		{
-			icon: FitnessCenterOutlinedIcon,
-			name: "Bootcamp",
-			description:
-				"Circuiti di esercizi che combinano forza e cardio per un allenamento completo",
-		},
-		{
-			icon: DirectionsRunOutlinedIcon,
-			name: "CrossFit",
-			description:
-				"Programmi di allenamento funzionale per aumentare forza e condizione fisica generale",
+			"Corsi di gruppo": [
+				{
+					icon: FitnessCenterOutlinedIcon,
+					name: "Tonificazione",
+					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+				},
+				{
+					icon: MusicNoteIcon,
+					name: "Coreografia",
+					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+				},
+				{
+					icon: SportsHandballIcon,
+					name: "Functional training",
+					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+				},
+				{
+					icon: SelfImprovementOutlinedIcon,
+					name: "Yoga",
+					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+				},
+				{
+					icon: SportsGymnasticsOutlinedIcon,
+					name: "Pilates",
+					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+				},
+				{
+					icon: ManIcon,
+					name: "Posturale",
+					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+				},
+				{
+					icon: SelfImprovementOutlinedIcon,
+					name: "PancaFit",
+					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+				},
+				{
+					icon: DirectionsBikeRoundedIcon,
+					name: "Spinning",
+					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+				},
+				{
+					icon: SportsMmaIcon,
+					name: "Kickboxing",
+					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+				},
+				{
+					icon: EmojiPeopleIcon,
+					name: "Balli latini",
+					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+				},
+				{
+					icon: EscalatorWarningIcon,
+					name: "Corsi bambini",
+					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+				},
+			],
 		},
 	],
 };
@@ -245,7 +320,7 @@ const services = {
 const coursesProgram = {
 	coursesImg: coursesImg,
 	overtitle: "non perdere un allenamento",
-	title: "Programma dei corsi",
+	title: "Planning corsi",
 	description:
 		"Scarica il programma dei corsi per la sede di tuo interesse, puoi scegliere tra Somaglia o San Fiorano",
 	locations: [
@@ -257,9 +332,9 @@ const coursesProgram = {
 		},
 		{
 			name: "Somaglia",
-			address: "via Prova 19, 26844 Somaglia (LO)",
+			address: "via Autostrada del sole 4, 26867 Somaglia (LO)",
 			link:
-				"https://www.google.com/maps/embed/v1/place?q=via+Milano+11,+26848+San+Fiorano+(LO)&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
+				"https://www.google.com/maps/embed/v1/place?q=via+Autostrada+del+sole+4,+26867+Somaglia+(LO)&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
 		},
 	],
 };
@@ -323,9 +398,12 @@ const footer = {
 };
 
 const contacts = {
-	phone: "333 44 55 66 7",
-	phoneLabel: "Tel.",
+	phone: "3938116582",
+	phoneLabel: "Mobile (solo WhatsApp)",
 	phoneIcon: faPhone,
+	phone2: "037753493",
+	phoneLabel2: "Fisso",
+	phoneIcon2: faPhone,
 	email: "info@freetime.fitness",
 	emailLabel: "E-mail",
 };

@@ -54,8 +54,10 @@ const Footer = () => {
 						<div className="footer_container">
 							<div className="footer_content">
 								<div className="footer_logo">
-									<div className="logo d-flex flex-row align-items-center justify-content-center">
+									<div className="logo d-flex flex-column align-items-center justify-content-center">
 										<img src={logo} alt={process.env.REACT_APP_WEBSITE_NAME} />
+										<br />
+										<div class="payoff">Enjoy your body</div>
 									</div>
 								</div>
 								<nav className="footer_nav">
@@ -64,11 +66,16 @@ const Footer = () => {
 										<li>
 											<Link to="">Cookie Policy</Link>
 										</li>
+										<li>
+											<Link to="https://www.instagram.com/freetime_fitness/" target="_blank">
+												Cookie Policy
+											</Link>
+										</li>
 									</ul>
 								</nav>
 
 								<div className="newsletter_container">
-									<form action="#" id="newsletter_form" className="newsletter_form">
+									{/* <form action="#" id="newsletter_form" className="newsletter_form">
 										<div class="acceptance-container">
 											<input type="checkbox" id="acceptance-checkbox" class="acceptance-checkbox" />
 											<label for="acceptance-checkbox" class="acceptance-label">
@@ -85,7 +92,7 @@ const Footer = () => {
 											required="required"
 										/>
 										<button className="newsletter_button">{footer.cta}</button>
-									</form>
+									</form> */}
 								</div>
 								<div className="copyright d-flex flex-row align-items-start justify-content-center">
 									<div style={{ lineHeight: 1.5 }}>

@@ -24,7 +24,8 @@ const Hero = () => {
 									<div className="video_link">
 										<a
 											className="vimeo video_button d-flex flex-column align-items-center justify-content-center"
-											href="https://player.vimeo.com/video/99340873?autoplay=1&loop=1&title=0&autopause=0">
+											target="_blank"
+											href={hero.video}>
 											<div className="video_link_content d-flex flex-row align-items-center justify-content-start">
 												<div className="video_icon accent d-flex flex-column align-items-center justify-content-center">
 													<FontAwesomeIcon icon={hero.overtitleIcon} />
@@ -49,7 +50,7 @@ const Hero = () => {
 				<div className="container">
 					<div className="row">
 						<div className="col">
-							<div className="boxes_container d-flex flex-lg-row flex-column align-items-start justify-content-start">
+							<div className="boxes_container d-flex flex-lg-row flex-column align-items-start  align-items-stretch justify-content-start">
 								{hero.boxes.map((box, index) => {
 									const Icon = box.icon;
 

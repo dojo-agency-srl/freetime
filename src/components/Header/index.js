@@ -75,7 +75,10 @@ const Header = () => {
 								<div className="phone accent-color d-flex flex-row align-items-center justify-content-start ml-auto">
 									<FontAwesomeIcon icon={contacts.phoneIcon} className="accent-text" />
 									<div>
-										<Link to={`tel:${contacts.phone})`}>{contacts.phone}</Link>
+										<Link
+											to={`https://api.whatsapp.com/send?phone=${contacts.phone}&amp;text=Ciao, vorrei%20informazioni%20sulla%20palestra)`}>
+											{contacts.phone}
+										</Link>
 									</div>
 								</div>
 							</div>
@@ -118,7 +121,10 @@ const Header = () => {
 				<div className="menu_phone accent d-flex flex-row align-items-center justify-content-start">
 					<FontAwesomeIcon icon={contacts.phoneIcon} className="accent-text" />
 					<span>
-						<Link to={`tel:${contacts.phone})`}>{contacts.phone}</Link>
+						<Link
+							to={`https://api.whatsapp.com/send?phone=${contacts.phone}&amp;text=Ciao, vorrei%20informazioni%20sulla%20palestra)`}>
+							{contacts.phone}
+						</Link>
 					</span>
 				</div>
 			</div>

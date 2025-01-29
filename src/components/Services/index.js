@@ -24,29 +24,37 @@ const Services = () => {
 						</div>
 					</div>
 				</div>
-				<div className="row services_row">
-					{services.courses.map((course, index) => {
-						const Icon = course.icon;
 
-						return (
-							<div className="col-xl-4 col-md-6 service_col">
-								<div className="service">
-									<div className="service_title_container d-flex flex-row align-items-center justify-content-start">
-										<div>
-											<div className="service_icon">
-												<Icon />
+				{services.courses.map((category, index) => {
+					const categoryName = Object.keys(category)[0];
+					const coursesList = category[categoryName];
+
+					return (
+						<div className="row services_row" key={index}>
+							<h3>{categoryName}</h3>
+							{coursesList.map((course, subIndex) => {
+								const Icon = course.icon;
+								return (
+									<div key={subIndex} className="col-xl-4 col-md-6 service_col">
+										<div className="service">
+											<div className="service_title_container d-flex flex-row align-items-center justify-content-start">
+												<div>
+													<div className="service_icon">
+														<Icon />
+													</div>
+												</div>
+												<div className="service_title">{course.name}</div>
+											</div>
+											<div className="service_text">
+												<p>{course.description}.</p>
 											</div>
 										</div>
-										<div className="service_title">{course.name}</div>
 									</div>
-									<div className="service_text">
-										<p>{course.description}.</p>
-									</div>
-								</div>
-							</div>
-						);
-					})}
-				</div>
+								);
+							})}
+						</div>
+					);
+				})}
 			</div>
 		</div>
 	);
