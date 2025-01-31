@@ -64,12 +64,12 @@ const Footer = () => {
 									<ul className="d-flex flex-sm-row flex-column align-items-sm-start align-items-center justify-content-center">
 										{renderRoutes()}
 										<li>
-											<Link to="">Cookie Policy</Link>
+											<Link to="https://www.instagram.com/freetime_fitness/" target="_blank">
+												Instagram
+											</Link>
 										</li>
 										<li>
-											<Link to="https://www.instagram.com/freetime_fitness/" target="_blank">
-												Cookie Policy
-											</Link>
+											<Link to="">Cookie Policy</Link>
 										</li>
 									</ul>
 								</nav>
