@@ -178,8 +178,9 @@ const skills = {
 		"Da Freetime ogni allenamento è un trionfo, ogni sudore una medaglia, ogni giorno una nuova sfida vinta. Non importa da dove parti, conta dove vuoi arrivare. Lasciati ispirare, lascia che la tua energia prenda il volo. Vieni a scoprire il luogo dove il fitness incontra la passione. Benvenuto in Freetime, dove la tua forza interiore trova la sua vera espressione",
 	skills: [
 		{ name: "Fitness", percentage: 100 },
-		{ name: "Pilates", percentage: 70 },
-		{ name: "Yoga", percentage: 60 },
+		{ name: "Benessere", percentage: 100 },
+		{ name: "Energia", percentage: 100 },
+		{ name: "Noia", percentage: 0 },
 	],
 };
 
@@ -222,17 +223,19 @@ const services = {
 				{
 					icon: FitnessCenterOutlinedIcon,
 					name: "Attrezzature",
-					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+					description:
+						"Macchinari Technogym di ultima generazione sia isotonici che a carico libero",
 				},
 				{
 					icon: DescriptionIcon,
 					name: "Schede allenamento",
-					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+					description: "Personalizzate e comprese nel tuo abbonamento",
 				},
 				{
 					icon: GroupsIcon,
 					name: "Assistenza di sala",
-					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+					description:
+						"Un istruttore qualificato è sempre presente e disponibile in sala pesi per garantirti un allenamento sicuro",
 				},
 			],
 		},
@@ -241,17 +244,20 @@ const services = {
 				{
 					icon: PeopleIcon,
 					name: "Personal training",
-					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+					description:
+						"Servizio di allenamento individuale e personalizzato con un istruttore qualificato, per raggiungere i tuoi obiettivi",
 				},
 				{
 					icon: SportsGymnasticsOutlinedIcon,
 					name: "Massaggi sportivi",
-					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+					description:
+						"Post allenamento potrai concederti una coccola decontratturante e rigenerante",
 				},
 				{
 					icon: RestaurantMenuIcon,
 					name: "Nutrizionista",
-					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+					description:
+						"E' più facile raggiungere il tuo obiettivo di benessere abbinando all'allenamento un piano alimentare preparato dal nostro biologo nutrizionista",
 				},
 			],
 		},
@@ -260,57 +266,68 @@ const services = {
 				{
 					icon: FitnessCenterOutlinedIcon,
 					name: "Tonificazione",
-					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+					description:
+						"Migliora la tonicità del tuo corpo con l'utilizzo di piccoli attrezzi",
 				},
 				{
 					icon: MusicNoteIcon,
 					name: "Coreografia",
-					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+					description:
+						"Coordinazione e divertimento a ritmo di musica, a corpo libero o con lo step",
 				},
 				{
 					icon: SportsHandballIcon,
 					name: "Functional training",
-					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+					description:
+						"Utilizzando il corpo come sovraccarico ne miglioriamo le funzionalità attraverso esercizi con attrezzi specifici",
 				},
 				{
 					icon: SelfImprovementOutlinedIcon,
 					name: "Yoga",
-					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+					description:
+						"Migliora forza e flessibilità attraverso l'unione di movimento, respiro e meditazione",
 				},
 				{
 					icon: SportsGymnasticsOutlinedIcon,
 					name: "Pilates",
-					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+					description:
+						"Metodo di allenamento focalizzato sul rinforzo del core e sul miglioramento della flessibilità ed equilibrio",
 				},
 				{
 					icon: ManIcon,
 					name: "Posturale",
-					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+					description:
+						"Esercizi mirati per correggere e migliorare la postura uniti ad esercizi specifici per l'allungamento muscolare",
 				},
 				{
 					icon: SelfImprovementOutlinedIcon,
 					name: "PancaFit",
-					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+					description:
+						"Libertà e benessere a tutto il corpo attraverso l'allungamento muscolare globale decompensato fatto in postura corretta",
 				},
 				{
 					icon: DirectionsBikeRoundedIcon,
 					name: "Spinning",
-					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+					description:
+						"Attività aerobica su bici svolta a ritmo di musica e ad intervalli di velocità per allenare la resistenza cardiovascolare",
 				},
 				{
 					icon: SportsMmaIcon,
 					name: "Kickboxing",
-					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+					description:
+						"Sport da combattimento che combina tecniche di calcio delle arti marziali a colpi di pugno del pugilato",
 				},
 				{
 					icon: EmojiPeopleIcon,
 					name: "Balli latini",
-					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+					description:
+						"I nostri istruttori di salsa e bachata ti porteranno alla scoperta delle danze caraibiche: una miscela esplosiva di sensualità, ritmo e allegria",
 				},
 				{
 					icon: EscalatorWarningIcon,
 					name: "Corsi bambini",
-					description: "Lorem ipsum dolor sit amet, consectetur adepiscing elit",
+					description:
+						"Proponiamo attività per bambini a partire dai 3 anni di età sempre proposte sotto forma di gioco",
 				},
 			],
 		},
