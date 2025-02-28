@@ -35,6 +35,7 @@ const Skills = () => {
 							<ul className="progress_bar_container col_12 clearfix">
 								{skills.skills.map((skill, index) => (
 									<li className="pb_item">
+										<h5>{skill.name}</h5>
 										<div
 											id="skill_1_pbar"
 											className="skill_bars"
@@ -62,7 +63,6 @@ const Skills = () => {
 											sx="color: rgb(113, 122, 133); position: absolute; right: 0px; top: -20px; padding: 0px; margin: 0px;">
 											{skill.percentage} %
 										</div>
-										<h5>{skill.name}</h5>
 									</li>
 								))}
 							</ul>

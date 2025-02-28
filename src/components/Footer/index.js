@@ -69,13 +69,16 @@ const Footer = () => {
 											</Link>
 										</li>
 										<li>
+											<Link to="">Privacy Policy</Link>
+										</li>
+										<li>
 											<Link to="">Cookie Policy</Link>
 										</li>
 									</ul>
 								</nav>
 
-								<div className="newsletter_container">
-									{/* <form action="#" id="newsletter_form" className="newsletter_form">
+								{/* <div className="newsletter_container">
+									<form action="#" id="newsletter_form" className="newsletter_form">
 										<div class="acceptance-container">
 											<input type="checkbox" id="acceptance-checkbox" class="acceptance-checkbox" />
 											<label for="acceptance-checkbox" class="acceptance-label">
@@ -92,8 +95,8 @@ const Footer = () => {
 											required="required"
 										/>
 										<button className="newsletter_button">{footer.cta}</button>
-									</form> */}
-								</div>
+									</form> 
+								</div>*/}
 								<div className="copyright d-flex flex-row align-items-start justify-content-center">
 									<div style={{ lineHeight: 1.5 }}>
 										Copyright &copy;{new Date().getFullYear()} | All rights reserved | Made by{" "}

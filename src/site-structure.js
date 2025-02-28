@@ -21,6 +21,7 @@ import GroupsIcon from "@mui/icons-material/Groups";
 import SportsMmaIcon from "@mui/icons-material/SportsMma";
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
 import EscalatorWarningIcon from "@mui/icons-material/EscalatorWarning";
+import AirlineSeatFlatIcon from "@mui/icons-material/AirlineSeatFlat";
 
 import heroImg from "images/index.jpg";
 import heroVid from "video/12_06.mp4";
@@ -30,13 +31,37 @@ import teamImg from "images/team.jpg";
 import testimonialImg from "images/testimonials__bg.png";
 import aboutPageImg from "images/about_page.jpg";
 import servicesPageImg from "images/services.jpg";
+import galleryPageImg from "images/gallery.jpg";
 import contactsPageImg from "images/contact.jpg";
 import skillsImg from "images/skills.jpg";
 import coursesImg from "images/courses.jpg";
 
-import team1 from "images/team_1.jpg";
-import team2 from "images/team_2.jpg";
-import team3 from "images/team_3.jpg";
+import team1 from "images/team/258.jpg";
+import team2 from "images/team/137.jpg";
+import team3 from "images/team/152.jpg";
+import team4 from "images/team/186.jpg";
+import team5 from "images/team/243.jpg";
+import team6 from "images/team/164.jpg";
+import team7 from "images/team/175.jpg";
+import team8 from "images/team/120.jpg";
+import team9 from "images/team/249.jpg";
+import team10 from "images/team/268.jpg";
+import team11 from "images/team/287.jpg";
+import team12 from "images/team/301.jpg";
+import team13 from "images/team/307.jpg";
+import team14 from "images/team/324.jpg";
+import team15 from "images/team/397.jpg";
+import team16 from "images/team/371.jpg";
+import team17 from "images/team/361.jpg";
+import team18 from "images/team/357.jpg";
+import team19 from "images/team/283.jpg";
+import team20 from "images/team/348.jpg";
+import team21 from "images/team/383.jpg";
+import team22 from "images/team/022.jpg";
+import team23 from "images/team/052.jpg";
+import team24 from "images/team/042.jpg";
+import team25 from "images/team/004.jpg";
+import team26 from "images/team/069.jpg";
 
 import gallery1 from "images/gallery/blog_7.jpg";
 import gallery2 from "images/gallery/blog_4.jpg";
@@ -84,7 +109,7 @@ const galleryPage = {
 	section: "Gallery",
 	linkName: "Gallery",
 	route: "/gallery",
-	heroImg: servicesPageImg,
+	heroImg: galleryPageImg,
 };
 
 const contactsPage = {
@@ -135,7 +160,7 @@ const hero = {
 			icon: FitnessCenterIcon,
 			title: "Sala Fitness",
 			description:
-				"Macchinari TechnoGym di ultima generazione e schede personalizzate per un allenamento a 360°",
+				"Macchinari Technogym di ultima generazione e schede personalizzate per un allenamento a 360°",
 		},
 		{
 			icon: EventAvailableIcon,
@@ -163,10 +188,32 @@ const team = {
 	overtitle: "garanzia di professionalità",
 	title: "Il team",
 	members: [
-		{ name: "Alessandro", job: "Content strategist", image: team3 },
-		{ name: "Debora", job: "Content strategist", image: team2 },
-		{ name: "Paolo", job: "Web designer", image: team1 },
-		{ name: "Altro", job: "Web designer 2", image: team1 },
+		{ name: "Angelo", job: "Direttore tecnico", image: team1 },
+		{ name: "Matteo", job: "Istruttore e personal trainer", image: team2 },
+		{ name: "Flavio", job: "Istruttore e personal trainer", image: team3 },
+		{ name: "Lorenzo", job: "Istruttore e personal trainer", image: team4 },
+		{ name: "Daniel", job: "Istruttore e personal trainer", image: team5 },
+		{ name: "Daniele", job: "Istruttore e personal trainer", image: team6 },
+		{ name: "Luca", job: "Istruttore e personal trainer", image: team7 },
+		{ name: "Gabriele", job: "Istruttore e personal trainer", image: team8 },
+		{ name: "Simone", job: "Istruttore e personal trainer", image: team9 },
+		{ name: "Max", job: "Istruttore corsi e personal trainer", image: team10 },
+		{ name: "Vanessa", job: "Istruttrice corsi", image: team11 },
+		{ name: "Clara", job: "Istruttrice corsi", image: team12 },
+		{ name: "Jessica", job: "Istruttrice corsi", image: team13 },
+		{ name: "Alice", job: "Istruttrice corsi", image: team14 },
+		{ name: "Benedetta", job: "Istruttrice Pancafit", image: team15 },
+		{ name: "Aldo", job: "Istruttore Spinning", image: team16 },
+		{ name: "Carlotta", job: "Istruttrice Spinning", image: team17 },
+		{ name: "Francesco", job: "Istruttore Spinning", image: team18 },
+		{ name: "Gianluca", job: "Istruttore Kick Boxing", image: team19 },
+		{ name: "Marco e Chiara", job: "Istruttori balli latini", image: team20 },
+		{ name: "Ginevra", job: "Massoterapista", image: team21 },
+		{ name: "Riccardo", job: "Addetto alle iscrizioni", image: team22 },
+		{ name: "Maria", job: "Addetta alle iscrizioni", image: team23 },
+		{ name: "Nicolò", job: "Addetto alle iscrizioni", image: team24 },
+		{ name: "Stefania", job: "Addetta all'accoglienza", image: team25 },
+		{ name: "Linda", job: "Addetta all'accoglienza", image: team26 },
 	],
 };
 
@@ -248,7 +295,7 @@ const services = {
 						"Servizio di allenamento individuale e personalizzato con un istruttore qualificato, per raggiungere i tuoi obiettivi",
 				},
 				{
-					icon: SportsGymnasticsOutlinedIcon,
+					icon: AirlineSeatFlatIcon,
 					name: "Massaggi sportivi",
 					description:
 						"Post allenamento potrai concederti una coccola decontratturante e rigenerante",
