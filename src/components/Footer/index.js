@@ -139,7 +139,7 @@ const Footer = () => {
 									</ul>
 								</nav>
 
-								<div className="newsletter_container" style={{ display: "block" }}>
+								<div className="newsletter_container" style={{ display: "none" }}>
 									<form
 										id="newsletter_form"
 										className="newsletter_form"
