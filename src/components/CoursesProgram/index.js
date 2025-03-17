@@ -30,9 +30,9 @@ const CoursesProgram = () => {
 						</div>
 
 						<div className="locations">
-							{coursesProgram.locations.map((location, index) => (
+							{coursesProgram.locations.map((location) => (
 								<div className="button accent about_button">
-									<Link target="_blank" to={location.link}>
+									<Link target="_blank" to={location.doc}>
 										{location.name}
 									</Link>
 								</div>

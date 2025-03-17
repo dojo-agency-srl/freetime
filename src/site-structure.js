@@ -76,6 +76,9 @@ import gallery10 from "images/gallery/blog_10.jpg";
 import gallery11 from "images/gallery/blog_3.jpg";
 import gallery12 from "images/gallery/blog_2.jpg";
 
+import pdfSanFiorano from "pdf/planning_san_fiorano.pdf";
+import pdfSomaglia from "pdf/planning_somaglia.pdf";
+
 const homePage = {
 	pageTitle: "Home",
 	description: "Home",
@@ -393,12 +396,14 @@ const coursesProgram = {
 			address: "via Milano 11, 26848 San Fiorano (LO)",
 			link:
 				"https://www.google.com/maps/embed/v1/place?q=via+Milano+11,+26848+San+Fiorano+(LO)&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
+			doc: pdfSanFiorano,
 		},
 		{
 			name: "Somaglia",
 			address: "via Autostrada del sole 4, 26867 Somaglia (LO)",
 			link:
 				"https://www.google.com/maps/embed/v1/place?q=via+Autostrada+del+sole+4,+26867+Somaglia+(LO)&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
+			doc: pdfSomaglia,
 		},
 	],
 };

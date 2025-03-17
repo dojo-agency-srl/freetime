@@ -4,15 +4,10 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
-import gallery1 from "images/gallery/gallery_1.jpg";
-import gallery2 from "images/gallery/gallery_2.jpg";
-import gallery3 from "images/gallery/gallery_3.jpg";
-import gallery4 from "images/gallery/gallery_4.jpg";
-import gallery5 from "images/gallery/gallery_5.jpg";
+import { gallery } from "site-structure.js";
 
 const Gallery = () => {
 	const owlCarouselRef = useRef(null);
-	const items = [gallery1, gallery2, gallery3, gallery4, gallery5];
 
 	useEffect(() => {
 		// aggiungo listener per l'evento popstate
@@ -41,9 +36,9 @@ const Gallery = () => {
 					items={5}
 					autoplay
 					autoplayTimeout={5000}>
-					{items.map((item, index) => (
+					{gallery.images.slice(0, 5).map((item, index) => (
 						<div key={index} className="item">
-							<img src={item} alt="" />
+							<img src={item.source} alt={item.alt} />
 						</div>
 					))}
 				</OwlCarousel>
