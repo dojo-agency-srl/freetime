@@ -186,7 +186,7 @@ const Contacts = ({ title }) => {
 											type="checkbox"
 											id="acceptance-checkbox"
 											className="acceptance-checkbox"
-											onChange={handleCheckboxChange} // Aggiungi l'evento per aggiornare lo stato
+											onChange={handleCheckboxChange}
 										/>
 										<label htmlFor="acceptance-checkbox" className="acceptance-label">
 											<div>
