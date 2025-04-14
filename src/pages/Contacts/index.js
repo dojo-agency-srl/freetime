@@ -11,16 +11,12 @@ import logo from "images/logo_verde.png";
 
 import { contactsPage, contacts } from "site-structure";
 
-const Contacts = ({ title }) => {
+const Contacts = ({ title, description, name }) => {
 	const [isAccepted, setIsAccepted] = useState(false);
 
 	const handleCheckboxChange = (event) => {
 		setIsAccepted(event.target.checked);
 	};
-
-	useEffect(() => {
-		document.title = title;
-	}, []);
 
 	const onSubmit = (mailMessage) => {
 		window.location.href = `mailTo:${contacts.email}?subject=Richiesta info da ${mailMessage.sender}, ${mailMessage.phone}&body=${mailMessage.text}`;
@@ -42,7 +38,7 @@ const Contacts = ({ title }) => {
 		<>
 			<SecondaryHero
 				img={contactsPage.heroImg}
-				title={contactsPage.pageTitle}
+				title={contactsPage.pageName}
 				description={contactsPage.description}
 			/>
 
@@ -190,8 +186,11 @@ const Contacts = ({ title }) => {
 										/>
 										<label htmlFor="acceptance-checkbox" className="acceptance-label">
 											<div>
-												Letta la <Link to="">Privacy Policy</Link>, presto il mio consenso ad essere
-												ricontattato
+												Letta la{" "}
+												<Link to="https://www.iubenda.com/privacy-policy/47961628" target="_blank">
+													Privacy Policy
+												</Link>
+												, presto il mio consenso ad essere ricontattato
 											</div>
 										</label>
 									</div>

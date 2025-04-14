@@ -131,10 +131,16 @@ const Footer = () => {
 											</Link>
 										</li>
 										<li>
-											<Link to="">Privacy Policy</Link>
+											<Link to="https://www.iubenda.com/privacy-policy/47961628" target="_blank">
+												Privacy Policy
+											</Link>
 										</li>
 										<li>
-											<Link to="">Cookie Policy</Link>
+											<Link
+												to="https://www.iubenda.com/privacy-policy/47961628/cookie-policy"
+												target="_blank">
+												Cookie Policy
+											</Link>
 										</li>
 									</ul>
 								</nav>
@@ -153,8 +159,11 @@ const Footer = () => {
 											/>
 											<label for="acceptance-checkbox" class="acceptance-label">
 												<div>
-													Letta la <Link to="">Privacy Policy</Link>, presto il mio consenso per l’invio
-													di comunicazioni promozionali
+													Letta la{" "}
+													<Link to="https://www.iubenda.com/privacy-policy/47961628" target="_blank">
+														Privacy Policy
+													</Link>
+													, presto il mio consenso per l’invio di comunicazioni promozionali
 												</div>
 											</label>
 										</div>

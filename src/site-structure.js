@@ -80,16 +80,23 @@ import pdfSanFiorano from "pdf/planning_san_fiorano.pdf";
 import pdfSomaglia from "pdf/planning_somaglia.pdf";
 
 const homePage = {
-	pageTitle: "Home",
+	pageName: "Home",
 	description: "Home",
+	pageTitle:
+		"Freetime Palestra San Fiorano | Fitness, Benessere e Allenamenti su Misura",
+	pageDescription:
+		"Benvenuto da Freetime, la palestra a San Fiorano (Lodi) pensata per chi vuole stare bene. Corsi, personal trainer, sala attrezzi e tanto altro. Scopri il tuo spazio fitness.",
 	section: "Home",
 	linkName: "Home",
 	route: "/home",
 };
 
 const aboutPage = {
-	pageTitle: "About us",
+	pageName: "About us",
 	description: "Tutto quello che c'è da sapere su Freetime",
+	pageTitle: "Chi Siamo | Freetime Palestra San Fiorano",
+	pageDescription:
+		"Scopri la filosofia della palestra Freetime a San Fiorano: passione per il movimento, benessere e un ambiente accogliente per ogni livello di allenamento.",
 	section: "About",
 	linkName: "About us",
 	route: "/about-us",
@@ -98,8 +105,12 @@ const aboutPage = {
 };
 
 const servicesPage = {
-	pageTitle: "Servizi",
+	pageName: "Servizi",
 	description: "Dai uno sguardo alle attività che proponiamo",
+	pageTitle:
+		"Servizi | Corsi, Personal Trainer e Sala Pesi | Freetime San Fiorano",
+	pageDescription:
+		"Dai corsi di gruppo al personal training, dalla sala pesi al cardio: Freetime offre tutto quello che ti serve per raggiungere i tuoi obiettivi fitness a San Fiorano.",
 	section: "Servizi",
 	linkName: "Servizi",
 	route: "/servizi",
@@ -107,8 +118,11 @@ const servicesPage = {
 };
 
 const galleryPage = {
-	pageTitle: "Gallery",
+	pageName: "Galleria",
 	description: "Una collezione dei momenti che puoi vivere con noi",
+	pageTitle: "Gallery | Guarda la Palestra Freetime di San Fiorano",
+	pageDescription:
+		"Dai un’occhiata agli spazi, ai corsi e all’energia della palestra Freetime a San Fiorano. Scopri dove potresti allenarti ogni giorno.",
 	section: "Gallery",
 	linkName: "Gallery",
 	route: "/gallery",
@@ -116,9 +130,12 @@ const galleryPage = {
 };
 
 const contactsPage = {
-	pageTitle: "Contatti",
+	pageName: "Contatti",
 	description:
 		"Per informazioni compila il form con i tuoi dati e verrai ricontattato al più presto",
+	pageTitle: "Contattaci | Palestra Freetime San Fiorano (Lodi)",
+	pageDescription:
+		"Hai domande o vuoi iscriverti? Contatta Freetime a San Fiorano (LO). Siamo qui per aiutarti a iniziare il tuo percorso fitness con il piede giusto.",
 	section: "Contatti",
 	linkName: "Contatti",
 	route: "/contatti",

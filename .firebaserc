@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "freetime-staging"
-  }
+    "default": "freetime-staging",
+    "freetime": "freetime-8036f"
+  },
+  "targets": {},
+  "etags": {}
 }

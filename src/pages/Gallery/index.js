@@ -20,7 +20,7 @@ const Gallery = ({ title }) => {
 		<>
 			<SecondaryHero
 				img={galleryPage.heroImg}
-				title={galleryPage.pageTitle}
+				title={galleryPage.pageName}
 				description={galleryPage.description}
 			/>
 

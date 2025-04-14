@@ -15,7 +15,7 @@ const ServicesPage = ({ title }) => {
 		<>
 			<SecondaryHero
 				img={servicesPage.heroImg}
-				title={servicesPage.pageTitle}
+				title={servicesPage.pageName}
 				description={servicesPage.description}
 			/>
 

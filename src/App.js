@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 
+import Layout from "components/Layout";
+
 // import Loader from "components/Loader";
 import Header from "components/Header";
 import Footer from "components/Footer";
@@ -22,12 +24,21 @@ const App = () => {
 		const handleComplete = () => setLoading(false);
 
 		handleStart();
-		setTimeout(handleComplete, 1000); // Simula il tempo di caricamento, puoi rimuoverlo o modificarlo in base alle tue necessità
+		setTimeout(handleComplete, 1000);
 
 		return () => {
 			handleComplete();
 		};
 	}, [location]);
+
+	const currentRoute =
+		routes.find((route) => route.route === location.pathname) || {};
+
+	const {
+		pageName = "Home",
+		pageTitle = "Freetime",
+		pageDescription = "Freetime.",
+	} = currentRoute;
 
 	const getRoutes = (routes) =>
 		routes.map((route) => {
@@ -48,20 +59,17 @@ const App = () => {
 
 	return (
 		<>
-			<div className="super_container">
-				<Header />
-
-				{/* {loading && <Loader />} */}
-				<Routes>
-					<Route path="*" element={<Navigate to="/error" />} />
-
+			<Routes>
+				<Route
+					path="/"
+					element={
+						<Layout title={pageTitle} description={pageDescription} name={pageName} />
+					}>
 					<Route path="/" element={<Navigate to="/home" />} />
 
 					{getRoutes(routes)}
-				</Routes>
-
-				<Footer />
-			</div>
+				</Route>
+			</Routes>
 		</>
 	);
 };

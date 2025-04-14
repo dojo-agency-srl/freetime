@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from "react";
 
 import SecondaryHero from "components/SecondaryHero";
 import About from "components/About";
@@ -7,22 +7,22 @@ import Skills from "components/Skills";
 
 import { aboutPage } from "site-structure.js";
 
-const AboutPage = ({ title }) => {
-  useEffect(() => {
-    document.title = title;
-  }, [title]); 
+const AboutPage = ({ title, description, name }) => {
+	return (
+		<>
+			<SecondaryHero
+				img={aboutPage.heroImg}
+				title={aboutPage.pageName}
+				description={aboutPage.description}
+			/>
 
-  return (
-    <>
-        <SecondaryHero img={aboutPage.heroImg} title={aboutPage.pageTitle} description={aboutPage.description} />
+			<About />
 
-        <About />
+			<Team />
 
-        <Team />
-
-        <Skills />
-    </>
-  )
-}
+			<Skills />
+		</>
+	);
+};
 
 export default AboutPage;
